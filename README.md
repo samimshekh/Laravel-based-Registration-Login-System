@@ -5,7 +5,7 @@ Ye ek simple Laravel authentication system hai jisme user sirf **username** aur 
 
 ---
 
-## 🚀 Features
+## Features
 - User Registration (username + password)
 - User Login (session based)
 - User Logout
@@ -17,22 +17,21 @@ Ye ek simple Laravel authentication system hai jisme user sirf **username** aur 
 
 ---
 
-
----
-
-## 🔧 Installation Guide
+## Installation Guide
 
 ### 1. Clone Project
 ```
 
-git clone your-repo-url
-cd your-project
-
+git clone https://github.com/samimshekh/Laravel-based-Registration-Login-System.git
+cd Laravel-based-Registration-Login-System
 ```
 
 ### 2. Environment Setup
 ```
+# 1. Install dependencies
+composer install
 
+# 2. Create environment file
 cp .env.example .env
 
 ```
@@ -72,25 +71,25 @@ php artisan serve
 
 ---
 
-## 🔐 Authentication Flow
+## Authentication Flow
 
-### 🔸 Register
+### Register
 User username + password create karega  
 Password auto-hashed store hota hai.
 
-### 🔸 Login
+### Login
 User apne username + password se login karega.  
 Login successful hone par dashboard par redirect hota hai.
 
-### 🔸 Dashboard (Protected Route)
+### Dashboard (Protected Route)
 Dashboard **sirf logged-in** users ke liye accessible hai.
 
-### 🔸 Logout
+### Logout
 Session destroy hota hai aur user login page par redirect hota hai.
 
 ---
 
-## 🛣 Routes Overview
+## Routes Overview
 
 | Route | Method | Description |
 |------|--------|-------------|
@@ -106,7 +105,7 @@ Session destroy hota hai aur user login page par redirect hota hai.
 
 ---
 
-## 🖥 UI (Pages Included)
+## UI (Pages Included)
 - **Login Page** — modern centered card UI  
 - **Register Page** — same theme  
 - **Dashboard Page** — clean profile box + logout button  
@@ -122,14 +121,8 @@ Session destroy hota hai aur user login page par redirect hota hai.
 
 ---
 
-## 📌 Notes
+## Notes
 - System sirf username + password use karta hai (email optional nahi).  
 - Password hashing Laravel `Hash::make()` se hota hai.  
 - Session-based auth completely Laravel standard ke hisaab se likha gaya hai.  
 - Ye project beginners aur small authentication systems ke liye perfect hai.
-
----
-
-## Purpose
-Ye project **interview me Laravel knowledge demonstrate** karne ke liye banaya gaya hai.  
-Isme saare essential Laravel fundamentals use kiye gaye hain jo real-world interviews me frequently pooche jaate hain.
