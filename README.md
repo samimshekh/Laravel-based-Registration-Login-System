@@ -112,7 +112,7 @@ Session destroy hota hai aur user login page par redirect hota hai.
 
 ---
 
-## ✔ Requirements
+## Requirements
 - PHP 8.1+
 - Composer
 - Laravel 10/11
