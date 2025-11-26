@@ -1,0 +1,110 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f0f2f5;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Card container */
+.login-card {
+    background: #fff;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    width: 360px;
+    max-width: 95%;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+}
+
+.login-card h2 {
+    color: #333;
+    margin-bottom: 25px;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+/* Input fields */
+.login-card input[type="text"],
+.login-card input[type="password"] {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 10px 0 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-card input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0,123,255,0.5);
+    outline: none;
+}
+
+/* Buttons */
+.login-card button {
+    width: 100%;
+    padding: 14px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.login-card button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* Links */
+.login-card a {
+    display: block;
+    margin-top: 20px;
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.login-card a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Error and success messages */
+.error-message {
+    color: #dc3545;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.success-message {
+    color: #28a745;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+/* Responsive */
+@media screen and (max-width: 400px) {
+    .login-card {
+        padding: 30px 20px;
+    }
+}
